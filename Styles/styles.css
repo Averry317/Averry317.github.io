@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+     background-color: #041f42; /* 整个网页背景颜色（两边留白部分） */
+}
+
+#container {
+ width: 90%;          /* 两边留 5% 空隙 */
+  max-width: 1150px;   /* 桌面上不会太宽 */
+  margin: 0 auto;      /* 自动居中 */
+    background-color: #082F61;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* 可选: 加点阴影效果 */
+    color: #041f42;
+  padding: 20px; /* 让文字不要贴边 */
+}
+
+#pic1 {
+ position: relative;
+  width: 100%;
+  height: 600px; /* 可依你图大小调整 */
+  background-image: url("../Images/EFA%20photo8.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#logo {
+position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#logo img {
+    width: 250px;
+  height: auto;
+}
+
+#slogan{
+   position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+#slogan h1 {
+ color: white;
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+#content {
+  background-color: #082F61;  /* 深蓝底 */
+  color: white;
+  padding: 60px 40px;
+  width: 90%;                 /* 跟上面保持一致 */
+  max-width: 1200px;
+  margin: 0 auto;             /* 居中 */
+  box-sizing: border-box;
+}
+
+.page_content .h1 h1 {
+  margin-left: 0;      /* 清除多余左边距 */
+  padding-left: 0;     /* 确保没缩进去 */
+  text-align: left;    /* 强制靠左 */
+}
+
+#content h1 {
+  color: #00B4F1;             /* 浅蓝标题 */
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#AboutUsP1 {
+  line-height: 1.7;
+  font-size: 15px;
+  color: #f0f0f0;
+}
+
+#h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#h2 h2 {
+  color: #FFFF08;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#page2 {
+  padding: 60px 40px;
+  color: white;
+}
+
+#page2 .page_content {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#page2 h1 {
+  color: #00B4F1;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#page2 .h1 h1 {
+text-align: left;
+  margin-left: 0; /* 确保没被推开 */
+  padding-left: 0;
+  position: relative;
+  left: -40px; /* 这个数值可以慢慢调，比如 -5px, -8px, -12px */
+}
+
+#OurServiceP1 {
+  font-size: 15px;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+#OurServiceP2 p {
+ display: flex;
+  flex-wrap: wrap;         /* 自动换行 */
+  justify-content: center; /* 居中对齐 */
+  gap: 8px 20px;           /* 上下、左右的间距 */
+  margin-top: 20px;
+}
+
+#OurServiceP2 span {
+background-color: #f0f0f0;
+  color: #041f42;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 5px;
+  display: inline-block;
+  min-width: 180px;        /* 每个框宽度，控制排数用 */
+  text-align: center;
+}
+
+#page3 {
+  background-color: #082F61;
+  color: white;
+  padding: 60px 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#page3 .h1 h1 {
+   color: #00B4F1;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left:-80px;
+  padding-left: 0;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 自动换行 */
+  gap: 25px;
+  justify-items: center;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.project-gallery img {
+   width: 100%;
+  aspect-ratio: 4 / 3; /* 保持横图比例 */
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.h3 h3 {
+  color: #FFFF08;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#page4 {
+  background-color: #B6B6B6;
+  color: white;
+  padding: 60px 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#page4 h4 {
+  color: #B30000;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: auto;
+  padding: 0 0 20px 0;
+}
+
+#ContactUs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.contact-item img {
+width: 28px;
+  height: 28px;
+  filter: brightness(0) saturate(100%) invert(6%) sepia(16%) saturate(1379%) hue-rotate(186deg) brightness(97%) contrast(94%);
+}
+
+.contact-item p {
+ margin: 0;
+  color: #0F172A;
+}
+
+.address-text {
+   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+#corner-logo {
+  position: fixed;
+  bottom: 20px;   /* 离底部的距离 */
+  right: 20px;    /* 离右边的距离 */
+  z-index: 1000;  /* 确保在最上层 */
+  opacity: 0.8;   /* 稍微透明一点，不挡内容 */
+  transition: all 0.3s ease;
+}
+
+#corner-logo img {
+  width: 60px;    /* 可调整大小 */
+  height: auto;
+  border-radius: 10px; /* 可选，让边角柔和一点 */
+}
+
+#corner-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ✅ 统一图片默认设置：保持比例、不超过容器宽度 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ✅ 主图在小屏幕自动缩放 */
+@media (max-width: 768px) {
+  #pic1 {
+    height: 350px; /* 原本 600px，平板缩短 */
+    background-size: cover;
+    background-position: center top;
+  }
+
+  #logo img {
+    width: 180px;
+  }
+
+  #slogan h1 {
+    font-size: 18px;
+  }
+
+  /* 项目图片：改为两列 */
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .project-gallery img {
+    height: 160px;
+  }
+
+  /* Contact icons 变小 */
+  .contact-item img {
+    width: 22px;
+    height: 22px;
+  }
+
+  #corner-logo img {
+    width: 45px;
+  }
+}
+
+/* ✅ 手机版更小尺寸 */
+@media (max-width: 480px) {
+  #pic1 {
+    height: 220px;
+    background-size: cover;
+  }
+
+  #logo img {
+    width: 150px;
+  }
+
+  #slogan h1 {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  /* 项目图片：改为单列 */
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery img {
+    height: 180px;
+  }
+
+  /* Contact icons */
+  .contact-item img {
+    width: 20px;
+    height: 20px;
+  }
+
+  #corner-logo img {
+    width: 40px;
+  }
+}
+
+/* 📱 平板与手机优化 */
+@media (max-width: 768px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 30px;
+  }
+
+  .project-gallery img {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .project-gallery img {
+    aspect-ratio: 4 / 3;
+  }
+}
